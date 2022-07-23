@@ -259,4 +259,25 @@
     }
   });
 
+  // Set up the OSM layer
+  var myTileServer = new ol.layer.Tile({
+    source: new ol.source.OSM({
+      crossOrigin: null,
+      url: 'https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+    })
+  });
+
+// Create the map
+  var map = new ol.Map({
+    layers: [ myTileServer ],
+    target: 'map',
+    view: new ol.View({
+      center: ol.proj.transform([10, 45], 'EPSG:4326', 'EPSG:3857'),
+      zoom: 4
+    })
+  });
+
+
+
+
 })()
