@@ -5,16 +5,6 @@
 * License: https://bootstrapmade.com/license/
 */
 
-import Map from 'node_modules/ol/Map';
-import View from 'node_modules/ol/View';
-import 'ol/ol.css';
-import proj from 'node_modules/ol/proj'
-import TileLayer from 'node_modules/ol/Tile';
-import OSM from 'node_modules/ol/source/OSM';
-import * as source from "ol/source";
-import * as layer from "ol";
-
-
 (function() {
   "use strict";
 
@@ -271,19 +261,19 @@ import * as layer from "ol";
   });
 
   // Set up the OSM layer
-  var map = new layer.Tile({
-    source: new source.OSM({
+  var map = new ol.layer.Tile({
+    source: new ol.source.OSM({
       crossOrigin: null,
       url: 'https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png'
     })
   });
 
 // Create the map
-  var map = new Map({
+  var map = new ol.Map({
     layers: [ myTileServer ],
     target: 'map',
-    view: new View({
-      center: proj.transform([10, 45], 'EPSG:4326', 'EPSG:3857'),
+    view: new ol.View({
+      center: ol.proj.transform([10, 45], 'EPSG:4326', 'EPSG:3857'),
       zoom: 4
     })
   });
