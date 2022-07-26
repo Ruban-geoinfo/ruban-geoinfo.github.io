@@ -8,9 +8,8 @@
 import Map from 'https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/ol/Map';
 import View from 'https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/ol/View';
 import 'https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/ol/ol.css';
-import proj from 'https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/oll/proj'
-import TileLayer from 'node_modules/ol/Tile';
-import OSM from 'node_modules/ol/source/OSM';
+import proj from 'https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/ol/proj'
+
 import * as source from "https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/ol/source";
 import * as layer from "https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/ol";
 
