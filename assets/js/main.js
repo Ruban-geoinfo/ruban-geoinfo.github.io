@@ -5,7 +5,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-import Map from 'ol/Map';
+import Map from 'https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/7858611c247e63a94f36b8fbafb2103e1dc548cf/node_modules/ol/Map';
 import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
 import XYZ from 'ol/source/XYZ';
