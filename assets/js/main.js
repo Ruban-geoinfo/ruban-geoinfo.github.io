@@ -4,6 +4,13 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+import Map from 'ol/Map';
+import View from 'ol/View';
+import TileLayer from 'ol/layer/Tile';
+import OSM from 'ol/source/OSM';
+
+
 (function() {
   "use strict";
 
@@ -260,7 +267,7 @@
   });
 
   // Set up the OSM layer
-  var myTileServer = new ol.layer.Tile({
+  var map = new ol.layer.Tile({
     source: new ol.source.OSM({
       crossOrigin: null,
       url: 'https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png'

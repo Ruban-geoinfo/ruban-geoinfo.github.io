@@ -26,6 +26,11 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Map CSS File -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/css/ol.css" type="text/css">
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js"></script>
+
+
   <!-- =======================================================
   * Template Name: Folio - v4.1.0
   * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
@@ -387,7 +392,12 @@
                   <li><span>+49 15215266374</span></li>
                   <li><span>rubangeoinfo@gmail.com</span></li>
                 </ul>
+
+                <!-- ======= map section======= -->
+
                 <div tabindex="700" id="map" class="map"></div>
+                <script type="module" src="assets/js/main.js"></script>
+
               </div>
             </div>
 
@@ -426,7 +436,7 @@
                   </div>
 
                   <div class="mt-0">
-                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                    <input type="submit" class="btn btn-default btn-send" value="Send message">
                   </div>
 
                 </div>
