@@ -5,7 +5,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-import {OSM} from "ol/source";
+
 
 (function() {
   "use strict";
@@ -262,24 +262,20 @@ import {OSM} from "ol/source";
     }
   });
 
-  // Set up the OSM layer
-  var map = new ol.layer.Tile({
-    source: new ol.source.OSM({
-      crossOrigin: null,
-      url: 'https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-    })
-  });
 
 // Create the map
-  var map = new ol.Map({
-    layers: OSM,
+  const map = new ol.Map({
     target: 'map',
-    view: new ol.View({
-      center: ol.proj.transform([10, 45], 'EPSG:4326', 'EPSG:3857'),
-      zoom: 4
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM()
+      })
+    ],
+    view: new View({
+      center: [0, 0],
+      zoom: 5
     })
   });
-
 
 
 
