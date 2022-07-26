@@ -3,15 +3,16 @@
 * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
- */
+*/
 
-import Map from 'https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/ol/Map';
-import View from 'https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/ol/View';
-import 'https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/ol/ol.css';
-import proj from 'https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/ol/proj'
-
-import * as source from "https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/ol/source";
-import * as layer from "https://github.com/Ruban-geoinfo/Ruban-geoinfo.github.io/blob/eeb91750749c0a25115730dcb108bb3204776bd6/node_modules/ol";
+import Map from 'node_modules/ol/Map';
+import View from 'node_modules/ol/View';
+import 'ol/ol.css';
+import proj from 'node_modules/ol/proj'
+import TileLayer from 'node_modules/ol/Tile';
+import OSM from 'node_modules/ol/source/OSM';
+import * as source from "ol/source";
+import * as layer from "ol";
 
 
 (function() {
